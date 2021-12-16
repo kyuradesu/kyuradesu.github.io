@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form Pemesanan</title>
+	</head>
+	
+<body img background="img/full_size.jpg">
+	
+<tr>
+	<th><h2><a href="home.html">HOME</a></h2></th>
+	<th><h2><a href="list_menu.html">LIST MENU</a></h2></th>
+	<th><h2><a href="galery_menu.html">GALERY MENU</a></h2></th>
+	<th><h2><a href="form_pemesanan.html">PEMESANAN</a></h2></th>
+</tr>
+	
+<hr style="height: 2px; color: blue; background-color: blue">
+	<a href="https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/4/8/afc5bded-73a3-46ef-b8e7-450531e735fc.jpg">
+		
+	<img src="https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/4/8/afc5bded-73a3-46ef-b8e7-450531e735fc.jpg" style="position: absolute; width: 150px; height: 150px; left: 200px; top: 25px;" title="Little Bird"></a>
+	
+	<h1 align="center"><font color="aqua">Pemesanan Makanan/Minuman</font></h1>
+	<h1 align="center"><font color="aqua">Restaurant Little Bird</font></h1>
+	
+	
+<font color="black">
+	<form method="get" action="tampil_tamu.php">
+		
+		<table align="center">
+	<tr>
+		<td bgcolor="white"><label for="username"><b>Nama Lengkap</b></label></td>
+		<td bgcolor="lavender"><input type="text" id="username" name="NamaLengkap"></td>
+	</tr>
+	<tr>
+		<td bgcolor="white"><b>Jenis Orderan</b></td>		
+		<td bgcolor="white"><b>Makan Diteaaaampat<input type="radio" name="JenisOrderan" value="Makan DI Tempat">				Pesan Antar<input type="radio" name="JenisOrderan" value="Pesan Antar"></b></td>
+	</tr>
+	<tr>
+		<td bgcolor="white"><b>Tempat Duduk<br> (klik "-___-" jika memilih "Pesan Antar")</b></td>
+		<td bgcolor="white"><b>Indoor<input type="radio" name="TempatDuduk" value="Indoor">
+								Outdoor<input type="radio" name="TempatDuduk" value="Outdoor">
+			                    -___-<input type="radio" name="TempatDuduk" value="-___-"></b></td>
+	</tr>
+	<tr>
+		<td bgcolor="white"><label for="nomorhp"><b>Nomor Telepon</b></label></td>		
+		<td bgcolor="lavender"><input type="text" id="nomorhp" name="NomorTelepon"></td>
+	</tr>
+	<tr>
+		<td bgcolor="white"><label for="alamat"><b>"Mohon Tulis Alamat Lengkap"<br>(Kosongkan bila memilih "Makan Ditempat")</b></label></td>		
+		<td bgcolor="lavender"><textarea name="Alamat" cols="40" rows="3" id="alamat"></textarea></td>
+	</tr>
+		</table>
+	
+<h2 align="center"><font color="deeppink">Pesan Makanan/Minuman Disini</font></h2>
+	
+	<table align="center">
+<tr>
+	<td width="30" align="center" bgcolor="white"><strong><b>No</b></strong></td>		
+	<td width="300" align="center" bgcolor="white"><strong><b>Makanan Dan Minuman</b></strong></td>
+	<td align="center" bgcolor="white"><strong><b>Harga</b></strong></td>
+	<td align="center" bgcolor="white"><strong><b>Pesan</b></strong></td>
+</tr>
+
+<tr>
+	<td align="center" bgcolor="white">2</td>
+	<td bgcolor="white"><input type="text" name="Ayam_Goreng" value="Ayam Goreng" disabled></td>
+	<td bgcolor="white">@<input type="text" name="Ayam_Goreng" value="15000" disabled></td>
+	<td bgcolor="white"><input type="number" name="Ayam_Goreng" value="_" onKeyUp="Hitung()"></td>
+</tr>
+
+<tr>
+	<td align="center" bgcolor="white">3</td>
+	<td bgcolor="white"><input type="text" name="Ayam_Geprek" value="Ayam Geprek" disabled></td>
+	<td bgcolor="white">@<input type="text" name="Ayam_Geprek" value="14000" disabled></td>
+	<td bgcolor="white"><input type="number" name="Ayam_Geprek" value="_" onKeyUp="Hitung()"></td>
+</tr>
+		
+<tr>
+	<td align="center" bgcolor="white">4</td>
+	<td bgcolor="white"><input type="text" name="Ayam_Bakar" value="Ayam Bakar" disabled></td>
+	<td bgcolor="white">@<input type="text" name="Ayam_Bakar" value="17000" disabled></td>
+	<td bgcolor="white"><input type="number" name="Ayam_Bakar" value="_" onKeyUp="Hitung()"></td>
+</tr>
+		
+<tr>
+	<td align="center" bgcolor="white">5</td>
+	<td bgcolor="white"><input type="text" name="Iga_Sapi_Bakar_Rica" value="Iga Sapi Bakar Rica" disabled></td>
+	<td bgcolor="white">@<input type="text" name="Iga_Sapi_Bakar_Rica" value="45000" disabled></td>
+	<td bgcolor="white"><input type="number" name="Iga_Sapi_Bakar_Rica" value="_" onKeyUp="Hitung()"></td>
+</tr>
+		
+<tr>
+	<td align="center" bgcolor="white">6</td>
+	<td bgcolor="white"><input type="text" name="Sop_Buntut" value="Sop Buntut" disabled></td>
+	<td bgcolor="white">@<input type="text" name="Sop_Buntut" value="40000" disabled></td>
+	<td bgcolor="white"><input type="number" name="Sop_Buntut" value="_" onKeyUp="Hitung()"></td>
+</tr>
+		
+<tr>
+	<td align="center" bgcolor="white">7</td>
+	<td bgcolor="white"><input type="text" name="Chicken" value="Chicken" disabled></td>
+	<td bgcolor="white">@<input type="text" name="Chicken" value="13000" disabled></td>
+	<td bgcolor="white"><input type="number" name="Chicken" value="_" onKeyUp="Hitung()"></td>
+</tr>
+		
+<tr>
+	<td align="center" bgcolor="white">1</td>
+	<td bgcolor="white"><input type="text" name="Kepiting" value="Kepiting" disabled></td>
+	<td bgcolor="white">@<input type="text" name="Kepiting" value="75000" disabled></td>
+	<td bgcolor="white"><input type="number" name="Kepiting" value="_" onKeyUp="Hitung()"></td>
+</tr>
+		
+<tr>
+	<td align="center" bgcolor="white">8</td>
+	<td bgcolor="white"><input type="text" name="Ice_Juice" value="Ice Juice" disabled></td>
+	<td bgcolor="white">@<input type="text" name="Ice_Juice" value="12000" disabled></td>
+	<td bgcolor="white"><input type="number" name="Ice_Juice" value="_" onKeyUp="Hitung()"></td>
+</tr>
+		
+<tr>
+	<td align="center" bgcolor="white">9</td>
+	<td bgcolor="white"><input type="text" name="Coffee" value="Coffee" disabled></td>
+	<td bgcolor="white">@<input type="text" name="Coffee" value="10000" disabled></td>
+	<td bgcolor="white"><input type="number" name="Coffee" value="_" onKeyUp="Hitung()"></td>
+</tr>
+		
+<tr>
+	<td align="center" bgcolor="white">10</td>
+	<td bgcolor="white"><input type="text" name="Susu_Soda_Gembira" value="Susu Soda Gembira" disabled></td>
+	<td bgcolor="white">@<input type="text" name="Susu_Soda_Gembira" value="15000" disabled></td>
+	<td bgcolor="white"><input type="number" name="Susu_Soda_Gembira" value="_" onKeyUp="Hitung()"></td>
+</tr>
+	
+<tr>
+	<td colspan="3"><input type="submit" value="kirim data"></td>
+	<td><input type="reset" value="HAPUS"></td>	
+</tr>
+		</table>
+	
+	</form>
+</font>
+	
+	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br>
+
+	
+	
+	
+</body>
+</html>
